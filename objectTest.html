@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Vue Sample</title>
+</head>
+
+<body>
+  <div id="app">
+    <button type="button" name="button">TEST</button>
+  </div>
+  <script>
+    var test = {
+      'a-1' : 'abc',
+      'a2' : 'cde',
+      a3 : function () {
+        return {
+          test1 : 'abc1111'
+        }
+      }
+    };
+
+    var a1 = test.a3();
+    var a2 = test.a3();
+
+    a1.test1 = "test~~";
+
+
+    alert(a1.test1);
+    alert(a2.test1);
+  </script>
+</body>
+
+</html>
